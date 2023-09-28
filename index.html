@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FACEBOOK</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="parent-container">
+    <div class="facebook-style">
+    <h1><b>Exercise 1: Facebook</b></h1><br>
+    <img src="./Images/depositphotos.jpg" width="100px" height="100px"><br>
+    <p class="para-style">"Facebook, Inc. is an American online social media and social networking service company". It is based in Menlo Park, California</p><br>
+    <span class="link-style"><a href="https://www.google.com">For More Click Here</a></span><br>
+    <div class="table-container">
+    <h2><b>COURSE LIST</b></h2>
+    <table class="table-style">
+     <thead>
+        <tr>
+        <th class="table-head">Course Number</th>
+        <th class="table-head">Course Name</th>
+        <th class="table-head">Course Details</th>
+        <th class="table-head">Course Preference</th>
+        <th class="table-head">Course Fee</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr class="row">
+            <td class="table-row">60001</td>
+            <td class="table-row">Cloud DevOps</td>
+            <td class="table-row">AWS,Azure & Google</td>
+            <td class="table-row">First Preference</td>
+            <td class="fee-style">10,000.00</td>
+        </tr>
+        <tr class="alter-row">
+            <td class="table-row">60002</td>
+            <td class="table-row">Full Stack Development</td>
+            <td class="table-row">HTML,CSS & JavaScript</td>
+            <td class="table-row">Third Preference</td>
+            <td class="fee-style">7500.00</td>
+        </tr>
+        <tr>
+            <td class="table-row">60003</td>
+            <td class="table-row">Generative AI</td>
+            <td class="table-row">Shaping the Next Generation</td>
+            <td class="table-row">Second Preference</td>
+            <td class="fee-style">5000.00</td>
+        </tr>
+        <tr class="alter-row">
+            <td class="table-row">60004</td>
+            <td class="table-row">Embedded</td>
+            <td class="table-row">Core Area and Design</td>
+            <td class="table-row">Fourth Preference</td>
+            <td class="fee-style">3000.00</td>
+        </tr>
+     </tbody>
+    </table>
+       <div class="button-center">
+           <button onclick="signup()" type="button"class="button-style">Fill</button>
+           <button onclick="cancel()" type="button"class="button-styles">Cancel</button>
+       </div>
+    </div>
+    </div>
+    <div class="personal-details">
+        <form class="form-style">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your Name" class="form-style">
+        <label>Age:</label>
+        <input type="number" id="age" placeholder="Enter Your Age" class="form-style">
+        <label>Gender:</label><br>
+        <input type="radio" id="html" name="gender">
+        <label for="html">Male</label><br>
+        <input type="radio" id="next" name="gender">
+        <label for="next">Female</label><br>
+        <br><label>Email ID:</label>
+        <input type="text" id="mail" placeholder="Enter your Email Address" class="form-style">
+        <label>Mobile Number:</label>
+        <input type="number" id="mobile" placeholder="Enter your Mobile Number" class="form-style">
+        <label>Address:</label>
+        <textarea id="address" class="address-style">Permanent Address</textarea><br>
+        <div class="button-manage">
+            <button  class="button-type">Signup</button> 
+            <button  class="button-cancel">Cancel</button>
+        </div>
+        <script>
+            let login={
+                Name:"Sedhuram S",
+                Age:"21",
+                Gender:"Male",
+                EmailId:"sivasanthi.svs@gmail.com",
+                MobileNumber:9655454769,
+                Address:"D No 1/150 Mullai Nagar, Milk Diary Opposite, Krishnagiri, TamilNadu - 635002.",
+            }
+            function signup(){
+              let name=document.getElementById('name').value=login.Name
+              console.log('name')
+              let age=document.getElementById('age').value=login.Age
+              console.log('age')
+              let gender=document.getElementById('html').checked=login.Gender
+              console.log('gender')
+              let mail=document.getElementById('mail').value=login.EmailId
+              console.log('mail')
+              let mobile=document.getElementById('mobile').value=login.MobileNumber
+              console.log('mobile')
+              let address=document.getElementById('address').value=login.Address
+              console.log('address')
+            }
+            function cancel(){
+                let name=document.getElementById('name').value=""
+                console.log('name')
+                let age=document.getElementById('age').value=""
+                console.log('age')
+                let gender=document.getElementById('html').checked=""
+                console.log('gender')
+                let mail=document.getElementById('mail').value=""
+                console.log('mail')
+                let mobile=document.getElementById('mobile').value=""
+                console.log('mobile')
+                let address=document.getElementById('address').value=""
+                console.log('address')
+            }
+        </script>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
